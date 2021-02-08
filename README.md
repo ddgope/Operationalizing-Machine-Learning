@@ -26,7 +26,7 @@ For both parts of the project I use the dataset that can be obtained from [here]
 
 The architectural diagram is not very detailed by nature; its purpose is to give a rough overview of the operations. The diagram below is a visualization of the flow of operations from start to finish:
 
-![Architectural Diagram](img/Architectural_diagram1.png?raw=true "Architectural Diagram") 
+![Architectural Diagram](img/Architectural_diagram.png?raw=true "Architectural Diagram") 
   
 
 ***
