@@ -6,8 +6,7 @@
    * [Key Steps](#Key-Steps)
    * [Screenshots](#Screenshots)
    * [Screen Recording](#Screen-Recording)
-   * [Comments and future improvements](#Comments-and-future-improvements)
-   * [Dataset Citation](#Dataset-Citation)
+   * [Comments and future improvements](#Comments-and-future-improvements)   
    * [References](#References)
 
 ***
@@ -58,7 +57,7 @@ Once the model is deployed, I am using the ```endpoint.py``` script to interact 
 In this part of the project, I am using the Jupyter Notebook with the same keys, URI, dataset, cluster, and model names already created.
 
 - **Documentation:**
-The documentation includes: 1. the [screencast](https://youtu.be/0AKGw1YOcXw) that shows the entire process of the working ML application; and 2. this README file that describes the project and documents the main steps.
+The documentation includes: 1. the [screencast](https://youtu.be/0AKGw1YOcXw11) that shows the entire process of the working ML application; and 2. this README file that describes the project and documents the main steps.
 
 ***
 
@@ -260,17 +259,11 @@ A side note here: out of curiosity, I clicked the 'Data guardrails' tab (see scr
 * Lastly, a thing that could be taken into account is any future change(s) in the dataset that could impact the accuracy of the model. I do not have any experience on how this could be done in an automated way, but I am sure that a method exists and can be spotted if/when such a need arises.
 
 ***
-## Dataset Citation
-
-[Moro et al., 2014] S. Moro, P. Cortez and P. Rita. A Data-Driven Approach to Predict the Success of Bank Telemarketing. Decision Support Systems, Elsevier, 62:22-31, June 2014.
-
-***
 ## References
 
 - Udacity Nanodegree material
-- [App](https://app.diagrams.net/) used for the creation of the Architectural Diagram
-- [Prevent overfitting and imbalanced data with automated machine learning](https://docs.microsoft.com/en-us/azure/machine-learning/concept-manage-ml-pitfalls)
 - [Dr. Ware: Dealing with Imbalanced Data in AutoML](https://www.drware.com/dealing-with-imbalanced-data-in-automl/)
+- [Prevent overfitting and imbalanced data with automated machine learning](https://docs.microsoft.com/en-us/azure/machine-learning/concept-manage-ml-pitfalls)
 - [Microsoft Tech Community: Dealing with Imbalanced Data in AutoML](https://techcommunity.microsoft.com/t5/azure-ai/dealing-with-imbalanced-data-in-automl/ba-p/1625043)
 - A very interesting paper on the imbalanced classes issue: [Analysis of Imbalance Strategies Recommendation using a
 Meta-Learning Approach](https://www.automl.org/wp-content/uploads/2020/07/AutoML_2020_paper_34.pdf)
