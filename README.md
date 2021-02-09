@@ -24,7 +24,7 @@ For both parts of the project I use the dataset that can be obtained from [here]
 ***
 ## Architectural Diagram
 
-The architectural diagram is not very detailed by nature; its purpose is to give a rough overview of the operations. The diagram below is a visualization of the flow of operations from start to finish:
+Below architectural diagram is to give a rough overview of the operations aka the flow of operations from start to finish:
 
 ![Architectural Diagram](img/Architectural_diagram.png?raw=true "Architectural Diagram") 
   
@@ -242,7 +242,7 @@ The screen recording can be found [here](https://youtu.be/0AKGw1YOcXw) and it sh
 
 
 ***
-## Comments and future improvements
+## Future improvements
 
 * As I have pointed out in the 1st project as well, the data is **highly imbalanced**:
 
@@ -258,6 +258,9 @@ A side note here: out of curiosity, I clicked the 'Data guardrails' tab (see scr
 
 * Lastly, a thing that could be taken into account is any future change(s) in the dataset that could impact the accuracy of the model. I do not have any experience on how this could be done in an automated way, but I am sure that a method exists and can be spotted if/when such a need arises.
 
+* Want to design and implement a continuous integration (CI), continuous delivery (CD), and retraining pipeline for an AI application using Azure DevOps and Azure Machine Learning  **End to End ML Ops**:
+
+![End to End MLOps](img/ml-ops-python-architecture-diagram.png?raw=true "End to End MLOps")
 ***
 ## References
 
