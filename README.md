@@ -258,7 +258,7 @@ A side note here: out of curiosity, I clicked the 'Data guardrails' tab (see scr
 
 * Lastly, a thing that could be taken into account is any future change(s) in the dataset that could impact the accuracy of the model. I do not have any experience on how this could be done in an automated way, but I am sure that a method exists and can be spotted if/when such a need arises.
 
-* Want to design and implement a continuous integration (CI), continuous delivery (CD), and retraining pipeline for an AI application using Azure DevOps and Azure Machine Learning  **End to End ML Ops**:
+* **Below is the End to End ML Ops Architecture**: Want to design and implement a continuous integration (CI), continuous delivery (CD), and retraining pipeline for an AI application using Azure DevOps and Azure Machine Learning.  
 
 ![End to End MLOps](img/ml-ops-python-architecture-diagram.png?raw=true "End to End MLOps")
 ***
