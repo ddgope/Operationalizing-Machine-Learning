@@ -3,9 +3,9 @@ import json
 
 # URL for the web service, should be similar to:
 # 'http://8530a665-66f3-49c8-a953-b82a2d312917.eastus.azurecontainer.io/score'
-scoring_uri = 'http://9ffa1c83-50c1-4d07-9274-23e211036c7f.southcentralus.azurecontainer.io/score'
+scoring_uri = 'http://96756330-0c1f-434d-99de-9f87efa7cd42.southcentralus.azurecontainer.io/score'
 # If the service is authenticated, set the key or token
-key = 'ZKjuYKDmrm8BTXWqcGuJwx2Y1yYY1T6n'
+key = 'gIEojVx295pXmVXQshM7wdr169TIHyvh'
 
 # Two sets of data to score, so we get two results back
 data = {"data":
@@ -18,7 +18,7 @@ data = {"data":
             "contact": "cellular",
             "day_of_week": "mon",
             "default": "no",
-            "duration": 971,
+            "duration": 471,
             "education": "university.degree",
             "emp.var.rate": -1.8,
             "euribor3m": 1.299,
@@ -33,14 +33,14 @@ data = {"data":
             "previous": 1
           },
           {
-            "age": 87,
+            "age": 37,
             "campaign": 1,
             "cons.conf.idx": -46.2,
             "cons.price.idx": 92.893,
             "contact": "cellular",
             "day_of_week": "mon",
             "default": "no",
-            "duration": 471,
+            "duration": 771,
             "education": "university.degree",
             "emp.var.rate": -1.8,
             "euribor3m": 1.299,
