@@ -130,9 +130,6 @@ Deploying the best model will allow us to interact with the HTTP API service and
 
 After the deployment of the best model, I can enable _Application Insights_ and be able to retrieve logs:
 
-**Running logs.py script**
-Although we can enable _Application Insights_ at deploy time with a check-box, it is useful to be able to run code that will enable it for us. For this reason, I run the _logs.py_ Python file, where I put in _name_ the name of the deployed model (_best-model2_) and I add the line `service.update(enable_app_insights=True)`: 
-
 !["Application Insights" disabled](img/16.JPG?raw=true "'Application Insights' disabled")
 
 **"Application Insights" enabled in the Details tab of the endpoint**
@@ -144,6 +141,9 @@ Screenshot of the tab running "Application Insights":
 !["Application Insights" graphs](img/18.JPG?raw=true "Application Insights Graphs")
 
 We can see _Failed requests_, _Server response time_, _Server requests_ & _Availability_ graphs in real time.
+
+**Running logs.py script**
+Although we can enable _Application Insights_ at deploy time with a check-box, it is useful to be able to run code that will enable it for us. For this reason, I run the _logs.py_ Python file, where I put in _name_ the name of the deployed model (_best-model2_) and I add the line `service.update(enable_app_insights=True)`: 
 
 
 ### **Step 5: Swagger Documentation**
