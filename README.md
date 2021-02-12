@@ -6,7 +6,8 @@
    * [Key Steps](#Key-Steps)
    * [Screenshots](#Screenshots)
    * [Screen Recording](#Screen-Recording)
-   * [Comments and future improvements](#Comments-and-future-improvements)   
+   * [Future Improvements](#future-improvements)   
+   * [Cluster Cleanup](#Cluster Cleanup)   
    * [References](#References)
 
 ***
@@ -222,7 +223,8 @@ The screen recording can be found [here](https://youtu.be/0AKGw1YOcXw) and it sh
 
 
 ***
-## Future improvements
+   
+## Future Improvements
 
 * As I have pointed out in the 1st project as well, the data is **highly imbalanced**:
 
@@ -242,6 +244,10 @@ A side note here: out of curiosity, I clicked the 'Data guardrails' tab (see scr
 
 ![End to End MLOps](img/ml-ops-python-architecture-diagram.png?raw=true "End to End MLOps")
 ***
+   
+## Proof of cluster clean up
+![Cluster Cleanup](img/Deleting.JPG?raw=true "Cluster Cleanup")
+
 ## References
 
 - Udacity Nanodegree material
