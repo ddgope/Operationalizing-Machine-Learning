@@ -140,7 +140,7 @@ Although we can enable _Application Insights_ at deploy time with a check-box, i
 
 Screenshot of the tab running "Application Insights":
 
-!["Application Insights" graphs](img/18-Application Insight.JPG?raw=true "'Application Insight' graphs")
+!["Application Insights" graphs](img/18.JPG?raw=true "Application Insights Graphs")
 
 We can see _Failed requests_, _Server response time_, _Server requests_ & _Availability_ graphs in real time.
 
@@ -151,15 +151,13 @@ We can see _Failed requests_, _Server response time_, _Server requests_ & _Avail
 
 In this step, I consume the deployed model using Swagger. Azure provides a _Swagger JSON file_ for deployed models. This file can be found in the _Endpoints_ section, in the deployed model there, which should be the first one on the list. I download this file and save it in the _Swagger_ folder.
 
+![Swagger JSON](img/20.JPG?raw=true "Swagger JSON")
+
 I execute the files _swagger.sh_ and _serve.py_. What these two files do essentially is to download and run the latest Swagger container (_swagger.sh_), and start a Python server on port 9000 (_serve.py_). In the Live Demo page of Swagger UI. I click on Live Demo button and am transfered in a demo page with a sample server:
 
 ![Swagger UI](img/19.JPG?raw=true "Swagger UI Live Demo")
 
-I delete the address in the address bar pointed with the red arrow and replace it with: `http://localhost:9000/swagger.json`. After hitting _Explore_, Swagger UI generates interactive API documentation that lets us try out the API calls directly in the browser. 
-
-![Swagger runs on localhost](img/19.JPG?raw=true "Swagger runs on localhost")
-
-We can see below the HTTP API methods and responses for the model:
+I delete the address in the address bar pointed with the red arrow and replace it with: `http://localhost:9000/swagger.json`. After hitting _Explore_, Swagger UI generates interactive API documentation that lets us try out the API calls directly in the browser. We can see below the HTTP API methods and responses for the model:
 
 **Swagger runs on localhost - GET & POST/score endpoints**
 
@@ -211,9 +209,6 @@ The purpose of this step is to create, publish and consume a pipeline using the 
 
 ![In ML Studio](img/40.JPG?raw=true "In ML Studio")
 
-![In ML Studio](img/50.JPG?raw=true "In ML Studio")
-
-![In ML Studio](img/51.JPG?raw=true "In ML Studio")
 
 ***
 ## Screen Recording
