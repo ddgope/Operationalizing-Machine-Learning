@@ -199,7 +199,7 @@ The purpose of this step is to create, publish and consume a pipeline using the 
 ***
 ## Screen Recording
 
-The screen recording can be found [here](https://youtu.be/0AKGw1YOcXw) and it shows the project in action. More specifically, the screencast demonstrates:
+The screen recording can be found [here](https://youtu.be/TJqYUzw07Rs) and it shows the project in action. More specifically, the screencast demonstrates:
 
 * The working deployed ML model endpoint
 * The deployed Pipeline
