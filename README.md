@@ -7,7 +7,7 @@
    * [Screenshots](#Screenshots)
    * [Screen Recording](#Screen-Recording)
    * [Future Improvements](#future-improvements)   
-   * [Cluster Cleanup](#Cluster Cleanup)   
+   * [Cluster Cleanup](#Cluster-Cleanup)   
    * [References](#References)
 
 ***
@@ -246,7 +246,7 @@ A side note here: out of curiosity, I clicked the 'Data guardrails' tab (see scr
 ***
    
 ## Proof of cluster clean up
-![Cluster Cleanup](img/Deleting.JPG?raw=true "Cluster Cleanup")
+![Cluster-Cleanup](img/Deleting.JPG?raw=true "Cluster Cleanup")
 
 ## References
 
