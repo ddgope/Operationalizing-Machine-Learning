@@ -71,9 +71,7 @@ The first thing I check after opening the Azure Machine Learning Studio, is whet
 
 **Registered Datasets:**
 
-![Registered Datasets](img/Registered_Datasets.JPG?raw=true "Registered Datasets")
-
-![Bank-marketing Dataset - Explore](img/Bank-marketing_Dataset_Explore.JPG?raw=true "Bank-marketing Dataset - Explore")
+![Registered Datasets](img/1.JPG?raw=true "Registered Datasets")
 
 **Creating a new Automated ML run:**
 
@@ -85,7 +83,7 @@ I select the Bank-marketing dataset and in the second screen, I make the followi
 * _Exit criterion_: 1 hour in _Job training time (hours)_
 * _Max concurrent iterations_: 5. Please note that the number of concurrent operations **MUST** always be less than the maximum number of nodes configured in the cluster.
 
-![Creating a new Automated ML run](img/Creating_new_AutoML_run.JPG?raw=true "Creating a new Automated ML run")
+![Creating a new Automated ML run](img/2.JPG?raw=true "Creating a new Automated ML run")
 
 **Experiment is completed**
 
@@ -101,22 +99,24 @@ The experiment runs for about 20 min. and is completed:
 
 After the completion, we can see the resulting models:
 
-![Completed run models](img/Completed_run_models.JPG?raw=true "Completed run models")
+![Completed run models](img/9.JPG?raw=true "Completed run models")
 
 In the _Models_ tab, the first model (at the top) is the best model.
 You can see it below along with some of its characteristics & metrics:
 
-![Best model](img/Best_model.JPG?raw=true "Best model")
+![Best model](img/8.JPG?raw=true "Best model")
 
-![Best model graphs](img/Best_model_graphs.JPG?raw=true "Best model graphs")
+![Best model graphs](img/10.JPG?raw=true "Best model graphs")
 
-![Best model metrics](img/Best_model2_metrics.JPG?raw=true "Best model metrics")
+![Best model metrics](img/11.JPG?raw=true "Best model metrics")
 
 By clicking the _Data guardrails_ tab, we can also see some very interesting info about potential issues with data. In this case, the imbalanced data issue was flagged:
 
-![Data guardrails](img/Data_guardrails1.JPG?raw=true "Data guardrails")
+![Data guardrails](img/5.JPG?raw=true "Data guardrails")
 
-![Data guardrails  - additional details](img/Data_guardrails2.JPG?raw=true "Data guardrails - additional details")
+![Data guardrails  - additional details](img/6.JPG?raw=true "Data guardrails - additional details")
+
+![Data guardrails  - additional details](img/7.JPG?raw=true "Data guardrails - additional details")
 
 ### **Step 3: Deploy the Best Model**
 
@@ -125,27 +125,28 @@ First, I choose the best model i.e. the first model at the top in the _Models_ t
 
 Deploying the best model will allow us to interact with the HTTP API service and interact with the model by sending data over POST requests.
 
+![Deploy Model](img/14.JPG?raw=true "Deploy Model")
+
+![Deploy Model Additional](img/15.JPG?raw=true "Deploy Model Additional")
 
 ### **Step 4: Enable Application Insights**
 
 After the deployment of the best model, I can enable _Application Insights_ and be able to retrieve logs:
 
+**Running logs.py script**
+Although we can enable _Application Insights_ at deploy time with a check-box, it is useful to be able to run code that will enable it for us. For this reason, I run the _logs.py_ Python file, where I put in _name_ the name of the deployed model (_best-model2_) and I add the line `service.update(enable_app_insights=True)`: 
+
+!["Application Insights" disabled](img/16.JPG?raw=true "'Application Insights' disabled")
+
 **"Application Insights" enabled in the Details tab of the endpoint**
 
-!["Application Insights" enabled](img/Best_model2_Application_Insights_enabled.JPG?raw=true "'Application Insights' enabled")
+!["Application Insights" enabled](img/17.JPG?raw=true "'Application Insights' enabled")
 
 Screenshot of the tab running "Application Insights":
 
-!["Application Insights" graphs](img/Best_model2_Application_Insights_tab.JPG?raw=true "'Application Insights' graphs")
+!["Application Insights" graphs](img/18-Application Insight.JPG?raw=true "'Application Insights' graphs")
 
 We can see _Failed requests_, _Server response time_, _Server requests_ & _Availability_ graphs in real time.
-
-
-**Running logs.py script**
-
-Although we can enable _Application Insights_ at deploy time with a check-box, it is useful to be able to run code that will enable it for us. For this reason, I run the _logs.py_ Python file, where I put in _name_ the name of the deployed model (_best-model2_) and I add the line `service.update(enable_app_insights=True)`: 
-
-![Running logs.py script](img/Best_model2-logs_py_running.JPG?raw=true "Running logs.py script")
 
 
 ### **Step 5: Swagger Documentation**
@@ -154,33 +155,21 @@ Although we can enable _Application Insights_ at deploy time with a check-box, i
 
 In this step, I consume the deployed model using Swagger. Azure provides a _Swagger JSON file_ for deployed models. This file can be found in the _Endpoints_ section, in the deployed model there, which should be the first one on the list. I download this file and save it in the _Swagger_ folder.
 
-I execute the files _swagger.sh_ and _serve.py_. What these two files do essentially is to download and run the latest Swagger container (_swagger.sh_), and start a Python server on port 9000 (_serve.py_).
+I execute the files _swagger.sh_ and _serve.py_. What these two files do essentially is to download and run the latest Swagger container (_swagger.sh_), and start a Python server on port 9000 (_serve.py_). In the Live Demo page of Swagger UI. I click on Live Demo button and am transfered in a demo page with a sample server:
 
-![swagger.sh run](img/best_model2-Swagger1B.JPG?raw=true "swagger.sh run")
-
-![swagger.sh run](img/best_model2-Swagger1A.JPG?raw=true "swagger.sh run")
-
-In the Live Demo page of Swagger UI:
-
-![Swagger UI](img/Swagger_LiveDemo1.JPG?raw=true "Swagger UI")
-
-I click on Live Demo button and am transfered in a demo page with a sample server:
-
-![Swagger UI](img/Swagger_LiveDemo2.JPG?raw=true "Swagger UI Live Demo")
+![Swagger UI](img/19.JPG?raw=true "Swagger UI Live Demo")
 
 I delete the address in the address bar pointed with the red arrow and replace it with: `http://localhost:9000/swagger.json`. After hitting _Explore_, Swagger UI generates interactive API documentation that lets us try out the API calls directly in the browser. 
 
-![Swagger runs on localhost](img/61.JPG?raw=true "Swagger runs on localhost")
+![Swagger runs on localhost](img/19.JPG?raw=true "Swagger runs on localhost")
 
 We can see below the HTTP API methods and responses for the model:
 
 **Swagger runs on localhost - GET & POST/score endpoints**
 
-![Swagger runs on localhost](img/best_model2-Swagger1.JPG?raw=true "Swagger runs on localhost")
+![Swagger runs on localhost](img/21.JPG?raw=true "Swagger runs on localhost")
 
-![Swagger runs on localhost - GET endpoint](img/best_model2-Swagger2.JPG?raw=true "Swagger runs on localhost - GET endpoint")
-
-![Swagger runs on localhost - POST/score endpoint](img/best_model2-Swagger3.JPG?raw=true "Swagger runs on localhost - POST/score endpoint")
+![Swagger runs on localhost - POST/score endpoint](img/22.JPG?raw=true "Swagger runs on localhost - POST/score endpoint")
 
 
 ### **Step 6: Consume Model Endpoints**
@@ -189,9 +178,9 @@ Once the best model is deployed, I consume its endpoint using the `endpoint.py` 
 
 **Consume Model Endpoints: running endpoint.py**
 
-![endpoint.py](img/best_model2_enpoint_py.JPG?raw=true "endpoint.py")
+![endpoint.py](img/23.JPG?raw=true "endpoint.py")
 
-![run endpoint.py](img/best_model2_enpoint_py_run.JPG?raw=true "run endpoint.py")
+![run endpoint.py](img/24.JPG?raw=true "run endpoint.py")
 
 
 ### **Step 7: Create, Publish and Consume a Pipeline**
