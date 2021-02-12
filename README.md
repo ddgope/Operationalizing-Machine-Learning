@@ -87,13 +87,9 @@ I select the Bank-marketing dataset and in the second screen, I make the followi
 
 **Experiment is completed**
 
-The experiment runs for about 20 min. and is completed:
+The experiment runs for about 26 min. and is completed:
 
-![Experiment is completed](img/Experiment_Completed.JPG?raw=true "Experiment is completed")
-
-![AutoML completed](img/AutoML_Completed.JPG?raw=true "AutoML completed")
-
-![AutoML completed](img/35.JPG?raw=true "AutoML completed")
+![Experiment is completed](img/13.JPG?raw=true "Experiment is completed")
 
 **Best model**
 
@@ -144,7 +140,7 @@ Although we can enable _Application Insights_ at deploy time with a check-box, i
 
 Screenshot of the tab running "Application Insights":
 
-!["Application Insights" graphs](img/18-Application Insight.JPG?raw=true "'Application Insights' graphs")
+!["Application Insights" graphs](img/18-Application Insight.JPG?raw=true "'Application Insight' graphs")
 
 We can see _Failed requests_, _Server response time_, _Server requests_ & _Availability_ graphs in real time.
 
