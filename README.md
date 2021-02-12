@@ -186,30 +186,15 @@ The purpose of this step is to create, publish and consume a pipeline using the 
 
 **The Pipelines section of Azure ML Studio**
 
-![Pipeline has been created](img/Pipeline_has_been_created.JPG?raw=true "Pipeline has been created")
+![Pipeline has been created](img/26.JPG?raw=true "Pipeline has been created")
 
-![Pipeline Endpoint](img/Pipeline_Endpoint.JPG?raw=true "Pipeline Endpoint")
+![Pipeline has been running](img/27.JPG?raw=true "Pipeline has been running")
 
-**Bankmarketing dataset with the AutoML module** 
-
-![Bankmarketing dataset with the AutoML module](img/Bankmarketing_Dataset+AutoML_module.JPG?raw=true "Bankmarketing dataset with the AutoML module")
-
-**Published Pipeline Overview showing a REST endpoint and an ACTIVE status** 
-
-![Published Pipeline Overview showing a REST endpoint and an ACTIVE status](img/41.JPG?raw=true "Published Pipeline Overview showing a REST endpoint and an ACTIVE status")
-
-![Published Pipeline Overview showing a REST endpoint and an ACTIVE status](img/42.JPG?raw=true "Published Pipeline Overview showing a REST endpoint and an ACTIVE status")
-
-**Jupyter Notebook: RunDetails Widget shows the step runs** 
-
-![Jupyter Notebook: RunDetails Widget shows the step runs](img/RunDetailsWidget1.JPG?raw=true "Jupyter Notebook: RunDetails Widget shows the step runs")
-
-![Jupyter Notebook: RunDetails Widget shows the step runs](img/RunDetailsWidget2.JPG?raw=true "Jupyter Notebook: RunDetails Widget shows the step runs")
+![Pipeline has been completed](img/29.JPG?raw=true "Pipeline has been completed")
 
 **In ML Studio: Completed run** 
 
-![In ML Studio](img/40.JPG?raw=true "In ML Studio")
-
+![In ML Studio](img/30.JPG?raw=true "In ML Studio")
 
 ***
 ## Screen Recording
