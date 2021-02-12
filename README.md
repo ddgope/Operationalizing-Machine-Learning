@@ -27,7 +27,7 @@ For both parts of the project I use the dataset that can be obtained from [here]
 
 Below architectural diagram is to give a rough overview of the operations aka the flow of operations from start to finish:
 
-![Architectural Diagram](img/Architectural_diagram.png?raw=true "Architectural Diagram") 
+![Architectural Diagram](img/Final_Architecture.jfif?raw=true "Architectural Diagram") 
   
 
 ***
