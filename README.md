@@ -145,6 +145,9 @@ We can see _Failed requests_, _Server response time_, _Server requests_ & _Avail
 **Running logs.py script**
 Although we can enable _Application Insights_ at deploy time with a check-box, it is useful to be able to run code that will enable it for us. For this reason, I run the _logs.py_ Python file, where I put in _name_ the name of the deployed model (_best-model2_) and I add the line `service.update(enable_app_insights=True)`: 
 
+!["Running Log1"](img/30.JPG?raw=true "Running Log1")
+
+!["Running Log2"](img/31.JPG?raw=true "Running Log2")
 
 ### **Step 5: Swagger Documentation**
 
@@ -191,6 +194,12 @@ The purpose of this step is to create, publish and consume a pipeline using the 
 ![Pipeline has been running](img/27.JPG?raw=true "Pipeline has been running")
 
 ![Pipeline has been completed](img/29.JPG?raw=true "Pipeline has been completed")
+
+Published Pipeline Overview showing a REST endpoint and an ACTIVE status
+![REST endpoint and an ACTIVE status](img/32.JPG?raw=true "REST endpoint and an ACTIVE status")
+
+Jupyter Notebook: RunDetails Widget shows the step runs
+![RunDetails Widget](img/33.JPG?raw=true "RunDetails Widget")
 
 **In ML Studio: Completed run** 
 
