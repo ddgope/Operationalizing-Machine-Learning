@@ -6,7 +6,8 @@
    * [Key Steps](#Key-Steps)
    * [Screenshots](#Screenshots)
    * [Screen Recording](#Screen-Recording)
-   * [Comments and future improvements](#Comments-and-future-improvements)   
+   * [Future Improvements](#future-improvements)   
+   * [Cluster Cleanup](#Cluster-Cleanup)   
    * [References](#References)
 
 ***
@@ -140,7 +141,7 @@ Although we can enable _Application Insights_ at deploy time with a check-box, i
 
 Screenshot of the tab running "Application Insights":
 
-!["Application Insights" graphs](img/18-Application Insight.JPG?raw=true "'Application Insight' graphs")
+!["Application Insights" graphs](img/18.JPG?raw=true "Application Insights Graphs")
 
 We can see _Failed requests_, _Server response time_, _Server requests_ & _Availability_ graphs in real time.
 
@@ -151,15 +152,13 @@ We can see _Failed requests_, _Server response time_, _Server requests_ & _Avail
 
 In this step, I consume the deployed model using Swagger. Azure provides a _Swagger JSON file_ for deployed models. This file can be found in the _Endpoints_ section, in the deployed model there, which should be the first one on the list. I download this file and save it in the _Swagger_ folder.
 
+![Swagger JSON](img/20.JPG?raw=true "Swagger JSON")
+
 I execute the files _swagger.sh_ and _serve.py_. What these two files do essentially is to download and run the latest Swagger container (_swagger.sh_), and start a Python server on port 9000 (_serve.py_). In the Live Demo page of Swagger UI. I click on Live Demo button and am transfered in a demo page with a sample server:
 
 ![Swagger UI](img/19.JPG?raw=true "Swagger UI Live Demo")
 
-I delete the address in the address bar pointed with the red arrow and replace it with: `http://localhost:9000/swagger.json`. After hitting _Explore_, Swagger UI generates interactive API documentation that lets us try out the API calls directly in the browser. 
-
-![Swagger runs on localhost](img/19.JPG?raw=true "Swagger runs on localhost")
-
-We can see below the HTTP API methods and responses for the model:
+I delete the address in the address bar pointed with the red arrow and replace it with: `http://localhost:9000/swagger.json`. After hitting _Explore_, Swagger UI generates interactive API documentation that lets us try out the API calls directly in the browser. We can see below the HTTP API methods and responses for the model:
 
 **Swagger runs on localhost - GET & POST/score endpoints**
 
@@ -211,9 +210,6 @@ The purpose of this step is to create, publish and consume a pipeline using the 
 
 ![In ML Studio](img/40.JPG?raw=true "In ML Studio")
 
-![In ML Studio](img/50.JPG?raw=true "In ML Studio")
-
-![In ML Studio](img/51.JPG?raw=true "In ML Studio")
 
 ***
 ## Screen Recording
@@ -227,7 +223,8 @@ The screen recording can be found [here](https://youtu.be/0AKGw1YOcXw) and it sh
 
 
 ***
-## Future improvements
+   
+## Future Improvements
 
 * As I have pointed out in the 1st project as well, the data is **highly imbalanced**:
 
@@ -247,17 +244,19 @@ A side note here: out of curiosity, I clicked the 'Data guardrails' tab (see scr
 
 ![End to End MLOps](img/ml-ops-python-architecture-diagram.png?raw=true "End to End MLOps")
 ***
+   
+## Proof of cluster clean up
+![Cluster-Cleanup](img/Deleting.JPG?raw=true "Cluster Cleanup")
+
 ## References
 
 - Udacity Nanodegree material
-- [Dr. Ware: Dealing with Imbalanced Data in AutoML](https://www.drware.com/dealing-with-imbalanced-data-in-automl/)
+- [Imbalanced Data : How to handle Imbalanced Classification Problems](https://www.analyticsvidhya.com/blog/2017/03/imbalanced-data-classification/)
 - [Prevent overfitting and imbalanced data with automated machine learning](https://docs.microsoft.com/en-us/azure/machine-learning/concept-manage-ml-pitfalls)
 - [Microsoft Tech Community: Dealing with Imbalanced Data in AutoML](https://techcommunity.microsoft.com/t5/azure-ai/dealing-with-imbalanced-data-in-automl/ba-p/1625043)
 - A very interesting paper on the imbalanced classes issue: [Analysis of Imbalance Strategies Recommendation using a
 Meta-Learning Approach](https://www.automl.org/wp-content/uploads/2020/07/AutoML_2020_paper_34.pdf)
-- [Imbalanced Data : How to handle Imbalanced Classification Problems](https://www.analyticsvidhya.com/blog/2017/03/imbalanced-data-classification/)
 - [Consume an Azure Machine Learning model deployed as a web service](https://docs.microsoft.com/en-us/azure/machine-learning/how-to-consume-web-service?tabs=python)
 - [Deep learning vs. machine learning in Azure Machine Learning](https://docs.microsoft.com/en-us/azure/machine-learning/concept-deep-learning-vs-machine-learning)
 - [A Review of Azure Automated Machine Learning (AutoML)](https://medium.com/microsoftazure/a-review-of-azure-automated-machine-learning-automl-5d2f98512406)
 - [Supported data guardrails](https://docs.microsoft.com/en-us/azure/machine-learning/how-to-configure-auto-features#supported-data-guardrails)
-- [Online Video Cutter](https://online-video-cutter.com/)
