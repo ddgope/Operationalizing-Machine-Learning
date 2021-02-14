@@ -197,7 +197,7 @@ The purpose of this step is to create, publish and consume a pipeline using the 
 ![Pipeline has been completed](img/29.JPG?raw=true "Pipeline has been completed")
 
 Published Pipeline Overview showing a REST endpoint and an ACTIVE status
-![REST endpoint and an ACTIVE status](img/33.JPG?raw=true "REST endpoint and an ACTIVE status")
+![REST endpoint and an ACTIVE status](img/36.JPG?raw=true "REST endpoint and an ACTIVE status")
 
 Jupyter Notebook: RunDetails Widget shows the step runs
 
